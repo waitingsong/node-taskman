@@ -138,7 +138,6 @@ jobs:
           export cwd=`pwd`
           . .scripts/ci/ci-env.sh
           .scripts/ci/ci-prepare.sh
-          .scripts/init.mjs
           npm run ci
         env:
           CI: true
