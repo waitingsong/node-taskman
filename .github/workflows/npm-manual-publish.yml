@@ -97,7 +97,6 @@ jobs:
       - name: Inatall Dependencies
         timeout-minutes: 15
         run: |
-          chown -R 1001:121 "/github/home/.npm"
           chmod a+w -R .
           # DO NOT execute: npm config set unsafe-perm=true
           export cwd=`pwd`
@@ -150,7 +149,6 @@ jobs:
           export cwd=`pwd`
           . .scripts/ci/ci-env.sh
           .scripts/ci/ci-prepare.sh
-          .scripts/init.mjs
           # npm run ci
           npm run test
         env:
