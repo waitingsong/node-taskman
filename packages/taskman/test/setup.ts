@@ -45,7 +45,6 @@ async function createAppInstance(): Promise<Application> {
     [ConfigKey.serverConfig]: taskServerConfig,
   }
   const opts = {
-    imports: [WEB],
     globalConfig,
   }
 
