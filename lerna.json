@@ -1,28 +1,33 @@
 {
-  "version": "independent",
-  "packages": [
-    "packages/*"
-  ],
+  "version": "41.6.7",
   "command": {
     "publish": {
       "ignoreChanges": [
-        "*.md",
-        "package-lock.json"
-      ]
-    },
-    "bootstrap": {
-      "hoist": true,
-      "noCi": true,
-      "nohoist": [
-        "cross-env"
+        ".githooks",
+        ".scripts",
+        ".vscode",
+        "package-lock.json",
+        "packages/demo",
+        "packages/mw-demo"
       ],
-      "npmClientArgs": [
-        "--no-package-lock"
-      ]
+      "verifyAccess": false
     },
     "version": {
       "conventionalCommits": true,
-      "allowBranch": ["master", "release"],
+      "allowBranch": [
+        "main",
+        "fix",
+        "release",
+        "versioning_*"
+      ],
+      "ignoreChanges": [
+        ".githooks",
+        ".scripts",
+        ".vscode",
+        "package-lock.json",
+        "packages/demo",
+        "packages/mw-demo"
+      ],
       "registry": "https://registry.npmjs.org/"
     }
   },
