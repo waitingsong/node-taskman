@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [42.0.0](https://github.com/waitingsong/node-taskman/compare/v41.6.8...v42.0.0) (2024-01-23)
+
+**Note:** Version bump only for package midway-components
+
+
+
+
+
 ## 41.6.8 (2023-09-27)
 
 **Note:** Version bump only for package midway-components
